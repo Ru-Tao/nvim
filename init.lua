@@ -6,6 +6,7 @@ o.number=true
 o.clipboard = "unnamedplus"
 o.undofile=true
 
+
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
@@ -44,5 +45,12 @@ require('mini.surround').setup()
 require('mini.pairs').setup()
 require('mini.icons').setup()
 require('mini.files').setup()
+require('mini.operators').setup()
+require('mini.statusline').setup()
 
 vim.treesitter.language.register("markdown", "vimwiki")
+
+-- After setting up mason-lspconfig you may set up servers via lspconfig
+-- require("lspconfig").lua_ls.setup {}
+-- require("lspconfig").rust_analyzer.setup {}
+-- ...
